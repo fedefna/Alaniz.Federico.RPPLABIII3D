@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/script.js" defer type="module"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+    <title>Practica Parcial</title>
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo_gorila.png" alt="logo">
+
+        <nav>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <p class="importante">
+            <em>Administración</em>
+        </p>
+        <div id="img">
+        </div>
+    </section>
+
+    <section class="container" id="dataIn">
+        <form class="formulario" id="formPersona">
+            <label for="titulo">Titulo </label>
+            <input type="text" name="titulo" id="titulo" placeholder="Ingresar Titulo" data-validation="alphanumeric"
+                required>
+            <label for="descripcion">Descripción</label>
+            <input type="text" name="descripcion" id="descripcion" placeholder="Ingresar Descripcion"
+                data-validation="alphanumeric" required>
+            <fieldset>
+                <legend>EXTRAS</legend>
+                <input type="checkbox" id="cbCorrea">
+                <label for="correa"> Se entrega con correa</label><br>
+                <input type="checkbox" id="cbBozal">
+                <label for="bozal"> Se entrega con bozal</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>ANIMAL</legend>
+                <label for="rdoP">
+                    <input type="radio" name="animal" id="" value="perro" checked>
+                    PERRO
+                </label>
+
+                <label for="rdoG">
+                    <input type="radio" name="animal" id="" value="gato">
+                    GATO
+                </label>
+
+            </fieldset>
+
+
+            <label for="precio">Precio</label>
+            <input type="number" name="precio" id="precio" placeholder="Ingresar Precio" data-validation="number"
+                required>
+            <div id="caracteristicas">
+                <label for="raza"><img src="./images/pawprint.png" alt=""></label>
+                <input type="text" name="raza" id="raza" placeholder="Raza" required>
+                <label for="fecha"><img src="images/ciguena.png" alt=""></label>
+                <input type="date" name="fecha" id="fecha" placeholder="Fecha" required>
+                <label for="fecha"><img src="images/injection.png" alt=""></label>
+                <select name="vacuna" id="">
+                    <option name="vacuna" value="si">Si</option>
+                    <option name="vacuna" value="no">No</option>
+
+                </select>
+            </div>
+
+
+            <div>
+                <button id="btnAdd" type="submit" class="btn btnAdd">
+                    <i class="fa fa-floppy-o fa-2x"></i>
+                    Guardar
+                </button>
+                <button id="btnEdit" type="submit" class="btn btnEdit ocultarBtn">Editar</button>
+                <button id="btnCancel" class="btn ocultarBtn">Cancelar</button>
+                <button id="btnDelete" class="btn btnDelete ocultarBtn">Eliminar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="container">
+        <div id="divTabla"></div>
+    </section>
+
+    <footer>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <p>
+            Todos los derechos reservados &copy;
+            <img src="./images/logo_gorila.png" alt="logo">
+        </p>
+        
+    </footer>
+</body>
+
+</html>
